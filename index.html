@@ -51,6 +51,8 @@
         .catch(error => {
           console.error('Error al obtener la cámara frontal:', error);
         });
+    }).catch(error => {
+      console.error('Error al enumerar dispositivos:', error);
     });
   </script>
 </body>
