@@ -6,10 +6,8 @@
   <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
   <!-- Incluir AR.js -->
   <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js/aframe/build/aframe-ar.min.js"></script>
-  <style>
-    body { margin: 0; overflow: hidden; }
-    a-scene { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
-  </style>
+  <!-- Incluir el CSS -->
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
   <a-scene embedded arjs>
@@ -20,5 +18,8 @@
     </a-marker>
     <a-entity camera></a-entity>
   </a-scene>
+
+  <!-- Incluir el JavaScript -->
+  <script src="camaraFront.js"></script>
 </body>
 </html>
