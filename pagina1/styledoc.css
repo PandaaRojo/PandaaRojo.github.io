@@ -1,0 +1,42 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:500);
+body {
+    font-family:'Ubuntu';
+    background-color: #1b2838; /* Azul oscuro al estilo de Steam */
+    color: #fff; /* Texto blanco */
+    margin: 0;
+    padding: 0;
+}
+
+.documt {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #2c3e50; /* Azul un poco más claro */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra ligera */
+}
+
+h1 {
+    font-size: 28px;
+    color: #3498db; /* Azul brillante para el título principal */
+}
+
+h2 {
+    font-size: 24px;
+    color: #ff4500; /* Color naranja para los títulos h2 */
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+#titulo {
+    font-family: 'Silkscreen', monospace;
+    font-size: 20px;
+}
+
+h5 p{
+    font-family: 'Ubuntu';
+    font-size: 16px;
+    line-height: 1.5;
+}
