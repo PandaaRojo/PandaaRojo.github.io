@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype HTML>
 <html>
 <head>
   <title>PANDA AR</title>
@@ -6,20 +6,27 @@
   <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
   <!-- Incluir AR.js -->
   <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js/aframe/build/aframe-ar.min.js"></script>
-  <!-- Incluir el CSS -->
+  <!-- Incluir A-Frame Extras -->
+  <script src="https://cdn.jsdelivr.net/gh/n5ro/aframe-extras@6.1.1/dist/aframe-extras.min.js"></script>
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-  <a-scene embedded arjs>
-    <!-- Define el marcador personalizado -->
-    <a-marker preset="custom" type="pattern" url="pattern-logo2AR.patt">
-      <!-- Cargar el modelo 3D -->
-      <a-entity gltf-model="modelo.glb" scale="0.5 0.5 0.5" position="0 0 0"></a-entity>
+  <a-scene embedded arjs='sourceType: webcam;'>
+    <!-- Definir activos (modelos, imágenes, etc.) -->
+    <a-assets>
+      <a-asset-item id="modelo-3d" src="model.glb"></a-asset-item>
+      <img id="gallo" src="gallo.png">
+    </a-assets>
+    
+    <!-- Usa tu propio marcador personalizado -->
+    <a-marker preset='custom' type='pattern' url='pattern-logo2AR.patt'>
+      <!-- Añadir modelo 3D -->
+      <a-entity gltf-model="#modelo-3d" scale="0.5 0.5 0.5" position="0 0 0"></a-entity>
+      <!-- Añadir imagen -->
+      <a-image src="#gallo" scale="2 2 2"></a-image>
     </a-marker>
+    
     <a-entity camera></a-entity>
   </a-scene>
-
-  <!-- Incluir el JavaScript -->
-  <script src="camaraFront.js"></script>
 </body>
 </html>
