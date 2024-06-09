@@ -1,0 +1,25 @@
+<!doctype HTML>
+<html>
+<script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"> </script>
+
+  <body style='margin : 0px; overflow: hidden;'>
+    <a-scene embedded arjs>
+  	<!-- <a-marker preset="hiro">
+		<!-- below is for content -->
+	<a-assets>
+	<a-asset-item id="tree-obj" src="eyeball.obj"></a-asset-item>
+    	<a-asset-item id="tree-mtl" src="eyeball.mtl"></a-asset-item>
+  	</a-assets>
+  	<a-entity scale="0.5 0.5 0.5"obj-model="obj: #tree-obj; mtl: #tree-mtl"></a-entity>
+
+<!--
+	<a-text value="hola, mundo"> </a-text>
+
+	<a-ring position='0 0.5 0' material='opacity: 0.7;'></a-ring>
+  	<!--</a-marker>
+  	<!--<a-entity camera></a-entity>-->
+	<a-marker-camera preset='hiro'></a-marker-camera>
+    </a-scene>
+  </body>
+</html>

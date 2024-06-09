@@ -1,0 +1,35 @@
+<!doctype HTML>
+<html>
+ <head>
+  <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+  <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"> </script>
+ </head>
+
+<body style=’margin : 0px; overflow: hidden;’>
+<a-scene embedded artoolkit='sourceType: webcam;'>  
+
+	      <a-marker preset='hiro'>
+			<a-image scale="5 5 5" src="cpv.png"></a-image>
+
+		</a-marker>
+
+<!-- add a simple camera -->
+  <a-entity camera>
+  </a-entity>
+  </a-scene>
+</body>
+
+</html>
+
+
+
+	<!--
+		<a-assets>
+		
+		<a-asset-item id="makery" src="makery.gltf"></a-asset-item>
+		</a-assets>
+	
+		<a-entity scale="10 10 10" gltf-model="#makery"></a-entity>
+
+-->
+

@@ -1,0 +1,42 @@
+<!doctype HTML>
+<html>
+ <head>
+  <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"> </script>
+
+
+ </head>
+
+<body style='margin : 0px; overflow: hidden; font-family: Monospace;'><div style='position: fixed; top: 10px; width:100%; text-align: center; z-index: 1;'>
+	<a href="https://github.com/pedrobcv/ejemplosAR.git" target="_blank">AR.js</a> - example for IDP - </div>
+
+<a-scene embedded arjs='sourceType: webcam; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
+
+		<a-marker preset='hiro'>
+			<a-image scale="2 2 2" src="idp.png"></a-image>
+		</a-marker>
+
+		<a-assets>
+		<a-asset-item id="tree-obj" src="eyeball.obj"></a-asset-item>
+	    	<a-asset-item id="tree-mtl" src="eyeball.mtl"></a-asset-item>
+	  	</a-assets>
+
+		<!-- handle barcode marker -->
+		<a-marker preset='kanji'>
+		
+	  	<a-entity scale="0.2 0.2 0.2"obj-model="obj: #tree-obj; mtl: #tree-mtl"></a-entity>
+		<a-text position='0.5 0 0' value="Hoja de calculo"></a-text>
+		<a-text position='-1 0 1' value="La Nube"></a-text>
+		<a-text position='-1 0 -1' value="Prezi"></a-text>
+		<a-text position='0.5 0 1' value="Proyecto Final"></a-text>
+		</a-marker>
+
+
+		<!-- add a simple camera -->
+  <a-entity camera>  </a-entity>
+  </a-scene>
+</body>
+
+</html>
+
+
