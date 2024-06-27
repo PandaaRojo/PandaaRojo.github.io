@@ -101,6 +101,7 @@ a:hover:not(.buy, .buy-cta, .learn) {
   display: grid;
   height: 580px;
   width: 960px;
+  
   background-image: linear-gradient(
     150deg,
     var(--dark-color) 60.2%,
@@ -372,4 +373,24 @@ a:hover:not(.buy, .buy-cta, .learn) {
   text-align: center;
   transition: all 0.2s;
 }
+@media (max-width: 851px) {
+  .scotch-container {
+    height: auto; /* Ajusta la altura según el contenido */
+    width: 100%; /* Ajusta el ancho al 100% del contenedor padre */
+    padding: 20px; /* Añade padding para separar el contenido de los bordes */
+    display: block; /* Cambia el display a block para mejor ajuste en móviles */
+  }
+
+  .scotch-container:before {
+    height: auto; /* Ajusta la altura según el contenido */
+    width: 100%; /* Ajusta el ancho al 100% del contenedor padre */
+  }
+
+  .scotch-container:hover:after {
+    height: auto; /* Ajusta la altura según el contenido */
+    width: 100%; /* Ajusta el ancho al 100% del contenedor padre */
+  }
+  
+}
+
 
