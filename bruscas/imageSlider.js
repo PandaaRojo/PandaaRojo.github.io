@@ -1,36 +1,37 @@
-document.addEventListener('DOMContentLoaded', function () {
-  const learnBack = document.querySelector('.learn-back');
-  const imageReference = document.querySelector('.image-reference');
-  const closeButton = document.querySelector('.close-button');
 
-  // Función para mostrar la imagen
-  function showImage() {
-    imageReference.classList.add('active');
-    // Ocultar la imagen después de 5 segundos (5000 milisegundos)
-    setTimeout(hideImage, 5000);
-  }
-
-  // Función para ocultar la imagen
-  function hideImage() {
-    imageReference.classList.remove('active');
-  }
-
-  // Evento para mostrar la imagen al hacer clic en "Ver Imagen"
-  learnBack.addEventListener('click', function (event) {
-    event.preventDefault();
-    showImage();
-  });
-
-  // Evento para ocultar la imagen al hacer clic en el botón de cierre
-  closeButton.addEventListener('click', function (event) {
-    event.stopPropagation();
-    hideImage();
-  });
-
-  // Evento para ocultar la imagen al hacer clic en cualquier otra parte de la página
-  document.addEventListener('click', function (event) {
-    if (!imageReference.contains(event.target) && !learnBack.contains(event.target)) {
-      hideImage();
-    }
-  });
+// Inicializar Swiper con efecto "cube" y ajuste para el desplazamiento con el mouse
+var swiper = new Swiper(".swiper", {
+    effect: "cube",
+    allowTouchMove: false, // Deshabilita el deslizamiento táctil
+    grabCursor: false, // No mostrar el cursor de "agarrar"
+    cubeEffect: {
+        shadow: true, // Sombra en el efecto cube
+        slideShadows: true, // Sombras para cada slide
+        shadowOffset: 20, // Desplazamiento de sombra
+        shadowScale: 0.94, // Escalado de sombra
+    },
+    mousewheel: true // Permitir desplazamiento con la rueda del mouse
 });
+
+// Evento que se ejecuta cuando cambia el slide
+swiper.on('slideChange', function () {
+    // Quitar la clase 'activeLink' de todos los elementos de la lista
+    for (let i of document.querySelectorAll(".Links li")) {
+        i.classList.remove("activeLink");
+    }
+    // Añadir la clase 'activeLink' al elemento correspondiente
+    Array.from(document.querySelectorAll(".Links li"))[swiper.activeIndex].classList.add("activeLink");
+});
+
+// Función para navegar entre los slides desde la lista de enlaces
+function Navigate(indx) {
+    // Quitar la clase 'activeLink' de todos los elementos de la lista
+    for (let i of document.querySelectorAll(".Links li")) {
+        i.classList.remove("activeLink");
+    }
+    // Añadir la clase 'activeLink' al elemento seleccionado
+    Array.from(document.querySelectorAll(".Links li"))[indx].classList.add("activeLink");
+    // Cambiar el slide según el índice recibido
+    swiper.slideTo(indx, 1000, true);
+}
+
