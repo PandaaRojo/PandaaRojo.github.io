@@ -4,10 +4,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
+
 
 body {
     height: 100vh;
+    background-color: #343a40;
+    overflow: hidden;
 }
 
 main {
@@ -31,6 +33,10 @@ aside {
     display: flex;
     flex-direction: column;
     margin: auto;
+}
+.Links li i {
+    font-size: 1.5rem;  /* Tamaño de los íconos */
+    color: #ffffff;     /* Color de los íconos */
 }
 
 aside li {
@@ -146,6 +152,7 @@ aside li i {
     font-size: 2.3em;
     margin-bottom: 10px;
     font-weight: 600;
+    
 
 }
 
@@ -218,6 +225,7 @@ aside li i {
 
     padding: 10px;
     color: white;
+ 
 }
 
 .heading {
@@ -362,6 +370,7 @@ aside li i {
 .gallery h1,
 .gallery h2 {
     grid-column: 1/span 3;
+   
 }
 
 .gallery h2 {
@@ -369,6 +378,7 @@ aside li i {
     font-weight: 600;
     font-size: 1.5rem;
     padding: 20px 10px;
+    
 }
 
 .gallery .project {
@@ -511,9 +521,11 @@ form h2 .SocialLinks i:hover{
     background-color: #176d2d;
 }
 .about-us{
-    overflow: auto;
+    overflow: hidden;
 }
-
+.about-us h2{
+    text-align: center;
+}
 .zoom img {
     width: 100%;
     height: 80%;
@@ -632,6 +644,7 @@ form h2 .SocialLinks i:hover{
   
 
 }
+}
 /* Estilos para ocultar h3 en pantallas pequeñas */
 @media (max-width: 576px) {
     /* Ocultar el texto h3 en pantallas pequeñas */
@@ -654,5 +667,36 @@ form h2 .SocialLinks i:hover{
     /* Asegurarse de que el texto esté siempre visible en pantallas grandes */
     .hidden-text {
         display: block;
+    }
+}
+
+
+
+@media (max-width: 520px) {
+    .Links li p {
+        display: none;  /* Oculta los textos en pantallas pequeñas */
+    }
+
+    .Links li i {
+        font-size: 2rem; /* Tamaño más grande de los íconos en pantallas pequeñas */
+    }
+}
+@media (max-width: 550px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Asegura que todo esté centrado horizontalmente */
+        padding: 0 10px; /* Añadir algo de padding para que no toque los bordes */
+    }
+    
+    header, main, aside, footer {
+        width: 100%; /* Asegura que los elementos ocupen todo el ancho disponible */
+        text-align: center; /* Centrar contenido */
+    }
+    
+    aside {
+        display: flex;
+        flex-direction: column; /* Apilar los links verticalmente */
+        justify-content: center;
     }
 }
