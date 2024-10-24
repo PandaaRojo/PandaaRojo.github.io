@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="bruscas.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <title>Bruscas</title>
+</head>
+<body>
+    <main>
+        <aside>
+            <ul class="Links">
+                <li onclick="Navigate(0)" class="activeLink"><i class="fa-solid fa-house"></i>
+                    <p>Inicio</p>
+                </li>
+                <li onclick="Navigate(1)"><i class="fa-solid fa-user"></i>
+                    <p>Ubicación</p>
+                </li>
+                <li onclick="Navigate(2)"><i class="fa-solid fa-list"></i>
+                    <p>Estructura</p>
+                </li>
+                <li onclick="Navigate(3)"><i class="fa-solid fa-images"></i>
+                    <p>Historia Narrada</p>
+                </li>
+                <li onclick="Navigate(4)"><i class="fa-solid fa-comments"></i>
+                    <p>RED PANDA</p>
+                </li>
+            </ul>
+        </aside>
+        
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide home-slide">
+                    <div class="HomeContent">
+                        <h1> <span class="stylized-name">Bruscas</span></h1>
+                        <h2><span class="proffesions">El presidio de Santa Elena</span></h2>
+                        <p class="heroline"></p>
+      
+                    </div>
+                    <div class="SideImg">
+                        <img src="https://lh4.googleusercontent.com/proxy/S0I7pcoPXu4Y8KmW3wHULFjENn2xe0-RpFnlRy94OWXtv1E7NM4ksXcKr4hJZ7pl3-MzvnpQhnwFD8cfGyLs008ZGki_2Pgh5I6Y" alt="">
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <div class="about-us">
+                        <h3>El presidio de Santa Elena estaba ubicado hacia el este de la ciudad de Dolores, al sur del Salado, en el km 7,500 de la Ruta 63 que une Dolores y la esquina de Croto. Actualmente, esta zona corresponde al paraje “Sol de Mayo” en la Ruta 63.</h3>
+                        <main class="zoom">
+                            <img src="lugar.jpg" class="zoom-image">
+                        </main>
+                    </div>
+                  
+                </div>
+              
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                    <div class="about-us">
+                        <p>El campamento de Santa Elena de Las Bruscas se componía de una capilla, un cementerio, las casas del Primer y Segundo Comisario como así también la del Ayudante, una pequeña pulpería, el galpón donde se repartía la carne, la guardia de avanzada, un hospital de veinte camas a cargo de un cirujano, una carpintería provista de herramientas y una ranchería de los oficiales y soldados prisioneros.   
+                        </p>
+                        <main class="zoom">
+                            <img src="plano.png" class="zoom-image">
+                          </main>
+                    </div>
+                  
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="swiper-slide">
+                    <div class="about-us">
+                        <h2>Tati Meckievi nos cuenta una breve historia de las Bruscas de Dolores</h2   >
+                            <audio controls>
+                                 <source src="audi.bruscas.mp4" type="audio/mpeg">
+                                 <source src="audi.bruscas.ogv" type="audio/ogg">
+                            </audio>
+                            <main class="zoom">
+                                <img src="campo.jpg" class="zoom-image">
+                              </main>
+                    </div>
+                  
+                </div>
+
+                <!-- Slide 5 -->
+                <div class="swiper-slide">
+                    <div class="about-us">
+                        <h3>SE VA A CAMBIAR ESTO</h3>
+                    </div>
+                    <a href="">
+                        <img src="pandapanda.png" alt="" class="panda">
+                    </a>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- JavaScript -->
+     
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="bruss.js"></script>
+    
+</body>
+</html>
