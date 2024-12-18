@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
 
 
 body {
@@ -576,7 +577,7 @@ form h2 .SocialLinks i:hover{
         border: none;
         outline: none;
         box-shadow: none;
-        color: #176d2d; /* Cambia este color según prefieras */
+        color: #ffffff; /* Cambia este color según prefieras */
         font-weight: lighter; /* Si quieres resaltar más */
     }
 
@@ -590,7 +591,6 @@ form h2 .SocialLinks i:hover{
 
 /* panda */
     .panda {
-        display: grid;
         height: 200px;
         width: 200px;
         background-image: var(--circle-rainbow);
@@ -598,15 +598,25 @@ form h2 .SocialLinks i:hover{
         border-radius: 50%;
         transition: all 0.4s;
         box-shadow: 0px 0px var(--shadow);
-        margin-left: 60%;
-        margin-top:-50%;
+        position: fixed;
+        right: 50px; 
+        top: 50%;
+        transform: translateY(-50%);
       }
-      
       .panda:hover {
         scale: 1.1;
         box-shadow: 16px 16px var(--shadow);
         transition: all 0.2s;
       }
+      .panda-text {
+        font-size: 20px; /* Ajusta el tamaño del texto */
+        margin-right: 5px; /* Espacio entre el texto y el logo */
+        color: #fff; /* Cambia el color según tu diseño */
+        font-weight: bold;
+        
+        
+
+    }
 /* panda */
 
 
@@ -644,7 +654,6 @@ form h2 .SocialLinks i:hover{
   
 
 }
-}
 /* Estilos para ocultar h3 en pantallas pequeñas */
 @media (max-width: 576px) {
     /* Ocultar el texto h3 en pantallas pequeñas */
@@ -672,7 +681,7 @@ form h2 .SocialLinks i:hover{
 
 
 
-@media (max-width: 520px) {
+@media (max-width: 612px) {
     .Links li p {
         display: none;  /* Oculta los textos en pantallas pequeñas */
     }
@@ -681,7 +690,7 @@ form h2 .SocialLinks i:hover{
         font-size: 2rem; /* Tamaño más grande de los íconos en pantallas pequeñas */
     }
 }
-@media (max-width: 550px) {
+@media (max-width: 612px) {
     .container {
         display: flex;
         flex-direction: column;
