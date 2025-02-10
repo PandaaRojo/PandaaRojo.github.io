@@ -1,15 +1,32 @@
 document.getElementById("mirror").addEventListener("click", function () {
-    let mirrorContent = document.getElementById("mirror-content");
-    let currentGif = mirrorContent.style.backgroundImage;
-
-    let gif1 = "url(https://media0.giphy.com/media/x28cIQSn19Tbi/giphy.gif)";
-    let gif2 = "url(https://media2.giphy.com/media/aXNjCb6cXtL8c/giphy.gif)";
-
-    if (currentGif.includes("x28cIQSn19Tbi")) {
-        mirrorContent.style.backgroundImage = gif2;
-        mirrorContent.style.backgroundPosition = "center"; // Mueve el GIF a la derecha
+    let audio = document.getElementById("click-sound");
+    if (!audio.paused) {
+        audio.pause();
+        audio.currentTime = 0; // Reinicia el audio al inicio
     } else {
-        mirrorContent.style.backgroundImage = gif1;
-        mirrorContent.style.backgroundPosition = "center"; // Lo regresa al centro
+        audio.play();
+    }
+});
+
+document.getElementById("play-pause").addEventListener("click", function () {
+    let audio = document.getElementById("click-sound");
+    if (audio.paused) {
+        audio.play();
+    } else {
+        audio.pause();
+    }
+});
+
+document.getElementById("volume-up").addEventListener("click", function () {
+    let audio = document.getElementById("click-sound");
+    if (audio.volume < 1) {
+        audio.volume += 0.1;
+    }
+});
+
+document.getElementById("volume-down").addEventListener("click", function () {
+    let audio = document.getElementById("click-sound");
+    if (audio.volume > 0) {
+        audio.volume -= 0.1;
     }
 });

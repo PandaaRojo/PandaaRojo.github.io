@@ -12,6 +12,12 @@ body {
 	background: #bd979f;
 }
 
+.controls {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
 .scene {
 	width: 100%;
 	position: relative;
