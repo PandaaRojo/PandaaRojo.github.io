@@ -57,46 +57,48 @@
     border: 1px solid #c0392b;
 }
 .single_menu {
-    position: relative;
-    margin-bottom: 75px;
-    transition: .3s;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px dashed #c0392b;
+  gap: 20px;
 }
-.single_menu:hover img{
-    -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
-clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
+
+.single_menu img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  width: 48%; /* para dos columnas en pantalla grande */
 
 }
-.single_menu img {
-    width: 33%;
-    position: absolute;
-    height: 140px;
-    -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
-    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
-    transition: .3s;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
+
 .menu_content {
-    padding-left: 200px;
+  flex: 1;
 }
+
 .menu_content h4 {
-    font-size: 25px;
-    font-weight: 300;
-    border-bottom: 1px dashed #c0392b;
-    line-height: 2;
-    text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0 0 10px;
+  border-bottom: 1px dashed #c0392b;
+  padding-bottom: 5px;
+  text-transform: capitalize;
 }
+
 .menu_content h4 span {
-    font-size: 25px;
-    font-weight: 800;
-    float: right;
-    font-style: italic;
-    color: #c0392b;
+  float: right;
+  font-size: 18px;
+  color: #c0392b;
+  font-weight: bold;
 }
+
 .menu_content p {
-    font-weight: 200;
-    font-size: 16px;
-    letter-spacing: 1px;
+  font-size: 16px;
+  color: #555;
 }
 .menu_btn.btn.btn-danger {
     margin: 0 auto;
@@ -149,96 +151,70 @@ clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
 }
 /* ... (otros estilos base se mantienen) ... */
 
-/* Media Queries para hacerlo responsivo */
-@media (max-width: 992px) { /* Tablet */
-    .single_menu img {
-        width: 25%;
-        height: 120px;
-    }
-    .menu_content {
-        padding-left: 150px;
-    }
-    .menu_content h4,
-    .menu_content h4 span {
-        font-size: 22px;
-    }
+/* Siempre en cascada (una columna) */
+.menu_list {
+  display: flex;
+  flex-direction: column; /* columna vertical */
+  align-items: center;     /* centrado horizontal */
+  justify-content: center;
+  gap: 40px;
+  margin: 0 auto;
+  max-width: 800px; /* o el ancho que quieras */
+  padding: 0 20px;
 }
 
-@media (max-width: 768px) { /* Tablet pequeña */
-    .single_menu {
-        margin-bottom: 60px;
-    }
-    .single_menu img {
-        width: 30%;
-        height: 100px;
-    }
-    .menu_content {
-        padding-left: 120px;
-    }
-    .menu_content h4,
-    .menu_content h4 span {
-        font-size: 20px;
-    }
-    .menu_content p {
-        font-size: 14px;
-    }
+/* Cada plato ocupa casi todo el ancho y está centrado */
+.single_menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  border-bottom: 1px dashed #c0392b;
+  padding-bottom: 20px;
 }
 
-@media (max-width: 576px) { /* Móvil */
-    .single_menu {
-        margin-bottom: 50px;
-        text-align: center;
-    }
-    .single_menu img {
-        position: relative;
-        width: 50%;
-        height: auto;
-        -webkit-clip-path: none;
-        clip-path: none;
-        margin-bottom: 15px;
-    }
-    .menu_content {
-        padding-left: 0;
-    }
-    .menu_content h4 {
-        border-bottom: none;
-    }
-    .nav-tabs .nav-link {
-        padding: 8px 12px;
-        font-size: 14px;
-    }
+.single_menu img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
 }
 
-/* Ajustes adicionales para mejor responsividad */
-.container {
-    padding-left: 15px;
-    padding-right: 15px;
+.menu_content h4 span {
+  display: block;
+  margin-top: 5px;
+  float: none;
+}
+.menu_content h4 span {
+  display: block;
+  margin-top: 5px;
+  float: none;
+  font-size: 18px;
+  color: #c0392b;
+  font-weight: bold;
 }
 
-.row {
-    margin-left: -15px;
-    margin-right: -15px;
+.menu_content p {
+  font-size: 16px;
+  color: #555;
 }
 
-/* Mejora para las pestañas en móviles */
-.nav-tabs {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
-    padding-bottom: 5px;
-}
-.nav-tabs::-webkit-scrollbar {
-    display: none;
-}
-
-.nav-item {
-    flex: 0 0 auto;
-}
-
-/* Ajuste del botón "Ver más" */
+/* Botón centrado */
 .menu_btn.btn.btn-danger {
-    width: auto;
-    padding: 10px 25px;
-    margin-top: 20px;
+  margin: 0 auto;
+  display: block;
+  width: 140px;
 }
+
+/* No necesitas media queries para el menú en cascada */
+    /* --- Destacar los .row con borde rojo --- */
+.row {
+  border: 2px solid red !important;
+  margin-bottom: 20px !important;
+  box-sizing: border-box;
+}
+
+
