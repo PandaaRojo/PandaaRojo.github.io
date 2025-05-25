@@ -217,4 +217,84 @@
   box-sizing: border-box;
 }
 
+/* --- Ajuste para imagen y texto proporcionados y responsivos --- */
+
+/* En pantallas grandes: imagen y texto al costado */
+.single_menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+  width: 100%;
+  border-bottom: 1px dashed #c0392b;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.single_menu img {
+  width: 40%;
+  max-width: 220px;
+  min-width: 120px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  display: block;
+}
+
+.menu_content {
+  width: 60%;
+  font-size: 1.1rem;
+}
+
+.menu_content h4 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin: 0 0 10px;
+  border-bottom: 1px dashed #c0392b;
+  padding-bottom: 5px;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu_content h4 span {
+  color: #c0392b;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-left: 15px;
+}
+
+.menu_content p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Responsive: imagen arriba, texto abajo, letra más grande */
+@media (max-width: 800px) {
+  .single_menu {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+  .single_menu img,
+  .menu_content {
+    width: 100%;
+    max-width: none;
+  }
+  .menu_content h4 {
+    font-size: 2rem;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .menu_content h4 span {
+    margin-left: 0;
+  }
+  .menu_content p {
+    font-size: 1.2rem;
+  }
+}
 
