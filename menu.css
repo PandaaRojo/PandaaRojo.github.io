@@ -8,6 +8,7 @@
     margin-bottom: 0;
     position: relative;
     text-transform: capitalize;
+    font-size: 2.8rem; /* Tamaño de fuente aumentado */
 }
 .page_title h1::before {
     background: #c0392b;
@@ -40,6 +41,7 @@
 }
 .nav-tabs .nav-link{
     transition: .3s;
+    font-size: 1.3rem; /* Tamaño de fuente para las tabs */
 }
 .nav-tabs .nav-link.active {
     background: #c0392b;
@@ -81,7 +83,7 @@
 }
 
 .menu_content h4 {
-  font-size: 20px;
+  font-size: 1.7rem; /* Tamaño de fuente aumentado */
   font-weight: 400;
   margin: 0 0 10px;
   border-bottom: 1px dashed #c0392b;
@@ -91,13 +93,13 @@
 
 .menu_content h4 span {
   float: right;
-  font-size: 18px;
+  font-size: 1.4rem; /* Tamaño de fuente aumentado */
   color: #c0392b;
   font-weight: bold;
 }
 
 .menu_content p {
-  font-size: 16px;
+  font-size: 1.25rem; /* Tamaño de fuente aumentado */
   color: #555;
 }
 .menu_btn.btn.btn-danger {
@@ -148,6 +150,7 @@
     margin-bottom: 0;
     position: relative;
     text-transform: capitalize;
+    font-size: 2.8rem; /* Tamaño de fuente aumentado */
 }
 /* ... (otros estilos base se mantienen) ... */
 
@@ -286,15 +289,16 @@
     max-width: none;
   }
   .menu_content h4 {
-    font-size: 2rem;
+    font-size: 2.6rem;   /* Más grande para móvil */
     flex-direction: column;
     gap: 5px;
   }
   .menu_content h4 span {
     margin-left: 0;
+    font-size: 2.2rem;   /* Más grande para móvil */
   }
   .menu_content p {
-    font-size: 1.2rem;
+    font-size: 1.7rem;   /* Más grande para móvil */
   }
 }
 
