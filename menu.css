@@ -1,6 +1,14 @@
 .page_title {
     padding: 30px 0px;
 }
+body {
+  background-image: url('https://images.pexels.com/photos/518245/pexels-photo-518245.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: #000000; /* Asegura contraste en la letra si antes era muy clara */
+}
 .page_title h1 {
     color: #c0392b;
     font-weight: 700;
@@ -31,6 +39,7 @@
     transform: translate(-50%, -50%);
 }
 /*Menu starts*/
+
 .menu_tab {
     margin: 0 auto;
     justify-content: center;
@@ -213,12 +222,6 @@
 }
 
 /* No necesitas media queries para el menú en cascada */
-    /* --- Destacar los .row con borde rojo --- */
-.row {
-  border: 2px solid red !important;
-  margin-bottom: 20px !important;
-  box-sizing: border-box;
-}
 
 /* --- Ajuste para imagen y texto proporcionados y responsivos --- */
 
@@ -241,7 +244,7 @@
   min-width: 120px;
   height: auto;
   object-fit: cover;
-  border-radius: 5px;
+  border-radius: 50%; 
   border: 1px solid #ddd;
   display: block;
 }
@@ -289,16 +292,24 @@
     max-width: none;
   }
   .menu_content h4 {
-    font-size: 2.6rem;   /* Más grande para móvil */
+    font-size: 2.6rem;  
     flex-direction: column;
     gap: 5px;
   }
   .menu_content h4 span {
     margin-left: 0;
-    font-size: 2.2rem;   /* Más grande para móvil */
+    font-size: 2.2rem;   
   }
   .menu_content p {
-    font-size: 1.7rem;   /* Más grande para móvil */
+    font-size: 1.7rem;   
   }
 }
-
+.burbuja {
+  background-color: rgba(241, 240, 240, 0.86); /* blanco semitransparente */
+  border-radius: 20px;                         /* bordes redondeados */
+  padding: 2rem;
+  max-width: 700px;
+  margin: 2rem auto;                           /* centrado vertical y horizontal */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);   /* sombra pequeña y suave */
+  backdrop-filter: blur(2px);                  /* efecto de desenfoque suave */
+}
