@@ -7,6 +7,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+  height: 100%;
   color: #000000; /* Asegura contraste en la letra si antes era muy clara */
 }
 .page_title h1 {
@@ -239,10 +240,8 @@ body {
 }
 
 .single_menu img {
-  width: 40%;
-  max-width: 220px;
-  min-width: 120px;
-  height: auto;
+  width: 150px; /* Ancho de la imagen */
+  height:150px;
   object-fit: cover;
   border-radius: 50%; 
   border: 1px solid #ddd;
@@ -286,11 +285,7 @@ body {
     text-align: center;
     gap: 15px;
   }
-  .single_menu img,
-  .menu_content {
-    width: 100%;
-    max-width: none;
-  }
+
   .menu_content h4 {
     font-size: 2.6rem;  
     flex-direction: column;
