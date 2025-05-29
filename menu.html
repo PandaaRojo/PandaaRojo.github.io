@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Restaurante - Menú de comida pestaña #03</title>
+  <title>Peña Menu</title>
   <!-- Normaliza estilos y Bootstrap -->
   <link rel="stylesheet" href="https://public.codepenassets.com/css/normalize-5.0.0.min.css">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
@@ -19,7 +19,7 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="page_title text-center mb-4">
-            <h1>nuestro menú</h1>
+            <h1>La Ñaupa</h1>
             <div class="single_line"></div>
           </div>
         </div>
@@ -30,14 +30,12 @@
       <div class="row">
         <ul class="nav nav-tabs menu_tab mb-4" id="myTab" role="tablist">
           <li class="nav-item">
-            <a class="nav-link active" id="breakfast-tab" data-toggle="tab" href="#breakfast" role="tab">Desayuno</a>
+            <a class="nav-link active" id="breakfast-tab" data-toggle="tab" href="#breakfast" role="tab">Comida</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id="lunch-tab" data-toggle="tab" href="#lunch" role="tab">Almuerzo</a>
+            <a class="nav-link" id="lunch-tab" data-toggle="tab" href="#lunch" role="tab">Bebidas</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" id="dinner-tab" data-toggle="tab" href="#dinner" role="tab">Cena</a>
-          </li>
+        
         </ul>
       </div>
       <!-- FIN Pestañas de navegación -->
@@ -50,37 +48,42 @@
           <div class="menu_list">
             <!-- Plato 1 -->
             <div class="single_menu burbuja">
-              <img src="https://assets.unileversolutions.com/recipes-v2/235078.jpg" alt="hamburguesa">
+              <img class="fondo-blanco" src="https://images.vexels.com/media/users/3/230823/isolated/preview/aac02a035207de9b98ead97e9642dbba-dibujos-animados-de-hamburguesa-feliz.png" alt="hamburguesa">
               <div class="menu_content">
-                <h4>Hamburguesa <span>$10.000</span></h4>
-                <p>ingredientes hamburguesa</p>
+                <h4>Hamburguesa simple <span>$3000</span></h4>
               </div>
             </div>
             <!-- Plato 2 -->
             <div class="single_menu burbuja">
-              <img src="https://assets.elgourmet.com/wp-content/uploads/2023/03/pizza_Mh3H4eanyBKEsStv1YclPWTf9OUqIi.png" alt="Pizza">
+              <img src="https://img.freepik.com/vector-gratis/ilustracion-dibujos-animados-hamburguesa-dibujada-mano_23-2150623475.jpg" alt="Pizza">
               <div class="menu_content">
-                <h4>Pizza <span>$2000</span></h4>
-                <p>ingrendientes pizza</p>
+                <h4>Hamburguesa jamon y queso <span>$3500</span></h4>
               </div>
             </div>
             <!-- Plato 3 -->
             <div class="single_menu burbuja">
-              <img src="https://assets.unileversolutions.com/recipes-v2/235078.jpg" alt="arroz frito">
+              <img src="https://i.pinimg.com/736x/e1/fa/43/e1fa4375327f1f3519c3eba7cff8a31a.jpg" alt="chori">
               <div class="menu_content">
-                <h4>Arroz Frito <span>$45</span></h4>
-                <p>Arroz frito con verduras frescas y tu elección de carne.</p>
+                <h4>Choripan <span>$4500</span></h4>
               </div>
             </div>
             <!-- Plato 4 -->
             <div class="single_menu burbuja">
-              <img src="https://assets.unileversolutions.com/recipes-v2/235078.jpg" alt="carne">
+              <img src="data:image/jpeg;base64,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" alt="agua">
               <div class="menu_content">
-                <h4>Corte de Carne <span>$24</span></h4>
-                <p>Jugoso corte de carne acompañado de guarniciones.</p>
+                <h4>Empanada<span>$1300</span></h4>
               </div>
             </div>
-          </div>
+
+              <!-- Plato 4 -->
+            <div class="single_menu burbuja">
+              <img class="fondo-blanco"  src="https://images.vexels.com/content/210257/preview/empanadas-dish-hand-drawn-50686e.png" alt="agua">
+              <div class="menu_content">
+                <h4>Docena de Empanadas<span>$13000</span></h4>
+              </div>
+            </div>
+        </div>
+
         </div>
         <!-- FIN Pestaña Desayuno -->
 
@@ -89,148 +92,48 @@
           <div class="menu_list">
             <!-- Plato 1 -->
             <div class="single_menu burbuja">
-              <img src="https://assets.unileversolutions.com/recipes-v2/235078.jpg" alt="pizza">
+              <img src="data:image/jpeg;base64,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">
               <div class="menu_content">
-                <h4>Pizza 12" <span>$35</span></h4>
-                <p>Pizza recién horneada con los ingredientes más frescos.</p>
+                <h4>Agua<span>$1000</span></h4>
               </div>
             </div>
             <!-- Plato 2 -->
             <div class="single_menu burbuja">
-              <img src="https://assets.unileversolutions.com/recipes-v2/235078.jpg" alt="ensalada">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1Sfadc63rhBeIJvH2ULIqPgugxRQQo63tmA&s" alt="coca">
               <div class="menu_content">
-                <h4>Ensalada <span>$20</span></h4>
-                <p>Ensalada fresca con aderezo de la casa.</p>
+                <h4>Vaso de gaseosa <span>$1000</span></h4>
               </div>
             </div>
             <!-- Plato 3 -->
             <div class="single_menu burbuja">
-              <img src="https://i.imgur.com/knnQm7e.jpg" alt="té verde">
+              <img src="https://i.pinimg.com/736x/68/c6/07/68c6070ac3dcd552e23adf8edac87c30.jpg">
               <div class="menu_content">
-                <h4>Té Verde <span>$15</span></h4>
-                <p>Té verde refrescante y saludable.</p>
+                 <h4>Cerveza <span>$3000</span></h4>
               </div>
             </div>
-            <!-- Plato 4 -->
+              <!-- bebida 4 -->
             <div class="single_menu burbuja">
-              <img src="https://i.imgur.com/YkDi8Nb.jpg" alt="carne">
+              <img src="data:image/jpeg;base64,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">
               <div class="menu_content">
-                <h4>Corte de Carne <span>$24</span></h4>
-                <p>Jugoso corte de carne acompañado de guarniciones.</p>
+                 <h4>Fernet <span>$4000</span></h4>
               </div>
             </div>
-            <!-- Plato 5 -->
+                <!-- bebida 5 -->
             <div class="single_menu burbuja">
-              <img src="https://i.imgur.com/kbpceNv.jpg" alt="hamburguesa">
+              <img src="https://res.cloudinary.com/riqra/image/upload/w_656,h_656,c_limit,q_auto,f_auto/v1725938077/sellers/capo-di-pasta/products/bkw3grtxbfhf1ttmlkpe.jpg">
               <div class="menu_content">
-                <h4>Hamburguesa de Pollo <span>$24</span></h4>
-                <p>Deliciosa hamburguesa de pollo con ingredientes frescos y sabrosos.</p>
+                 <h4>Vino Hormiga Negra <span>$6000</span></h4>
               </div>
             </div>
-            <!-- Plato 6 -->
+                  <!-- bebida 6 -->
             <div class="single_menu burbuja">
-              <img src="https://i.imgur.com/lYKUORL.jpg" alt="café negro">
+              <img src="https://statics.dinoonline.com.ar/imagenes/full_600x600_ma/3063628_f.jpg">
               <div class="menu_content">
-                <h4>Café Negro <span>$20</span></h4>
-                <p>Café recién hecho, fuerte y aromático para empezar tu día.</p>
+                 <h4>Vino Alma Mora <span>$8000</span></h4>
               </div>
             </div>
-            <!-- Plato 7 -->
-            <div class="single_menu burbuja">
-              <img src="https://i.imgur.com/AXAHrf6.jpg" alt="arroz frito">
-              <div class="menu_content">
-                <h4>Arroz Frito <span>$45</span></h4>
-                <p>Arroz frito con verduras frescas y tu elección de carne.</p>
-              </div>
-            </div>
-            <!-- Plato 8 -->
-            <div class="single_menu burbuja">
-              <img src="https://i.imgur.com/YkDi8Nb.jpg" alt="carne">
-              <div class="menu_content">
-                <h4>Corte de Carne <span>$24</span></h4>
-                <p>Jugoso corte de carne acompañado de guarniciones.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- FIN Pestaña Almuerzo -->
-
-        <!-- Pestaña Cena -->
-        <div class="tab-pane fade" id="dinner" role="tabpanel" aria-labelledby="dinner-tab">
-          <div class="menu_list">
-            <!-- Plato 1 -->
-            <div class="single_menu burbuja">
-              <img src="https://i.imgur.com/kbpceNv.jpg" alt="hamburguesa">
-              <div class="menu_content">
-                <h4>Hamburguesa de Pollo <span>$24</span></h4>
-                <p>Deliciosa hamburguesa de pollo con ingredientes frescos y sabrosos.</p>
-              </div>
-            </div>
-            <!-- Plato 2 -->
-            <div class="single_menu burbuja">
-              <img src="https://i.imgur.com/lYKUORL.jpg" alt="café negro">
-              <div class="menu_content">
-                <h4>Café Negro <span>$20</span></h4>
-                <p>Café recién hecho, fuerte y aromático para empezar tu día.</p>
-              </div>
-            </div>
-            <!-- Plato 3 -->
-            <div class="single_menu burbuja">
-              <img src="https://i.imgur.com/AXAHrf6.jpg" alt="arroz frito">
-              <div class="menu_content">
-                <h4>Arroz Frito <span>$45</span></h4>
-                <p>Arroz frito con verduras frescas y tu elección de carne.</p>
-              </div>
-            </div>
-            <!-- Plato 4 -->
-            <div class="single_menu burbuja">
-              <img src="https://i.imgur.com/YkDi8Nb.jpg" alt="carne">
-              <div class="menu_content">
-                <h4>Corte de Carne <span>$24</span></h4>
-                <p>Jugoso corte de carne acompañado de guarniciones.</p>
-              </div>
-            </div>
-            <!-- Plato 5 -->
-            <div class="single_menu burbuja">
-              <img src="https://i.imgur.com/kbpceNv.jpg" alt="hamburguesa">
-              <div class="menu_content">
-                <h4>Hamburguesa de Pollo <span>$24</span></h4>
-                <p>Deliciosa hamburguesa de pollo con ingredientes frescos y sabrosos.</p>
-              </div>
-            </div>
-            <!-- Plato 6 -->
-            <div class="single_menu burbuja">
-              <img src="https://i.imgur.com/lYKUORL.jpg" alt="café negro">
-              <div class="menu_content">
-                <h4>Café Negro <span>$20</span></h4>
-                <p>Café recién hecho, fuerte y aromático para empezar tu día.</p>
-              </div>
-            </div>
-            <!-- Plato 7 -->
-            <div class="single_menu burbuja">
-              <img src="https://i.imgur.com/AXAHrf6.jpg" alt="arroz frito">
-              <div class="menu_content">
-                <h4>Arroz Frito <span>$45</span></h4>
-                <p>Arroz frito con verduras frescas y tu elección de carne.</p>
-              </div>
-            </div>
-            <!-- Plato 8 -->
-            <div class="single_menu burbuja">
-              <img src="https://i.imgur.com/YkDi8Nb.jpg" alt="carne">
-              <div class="menu_content">
-                <h4>Corte de Carne <span>$24</span></h4>
-                <p>Jugoso corte de carne acompañado de guarniciones.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- FIN Pestaña Cena -->
-
-        <!-- Botón "ver más"  <a href="#" class="menu_btn btn btn-danger">ver más</a>-->
        
-      </div>
-      <!-- FIN CONTENIDO DE LAS PESTAÑAS -->
-    </div>
+
   </section>
   <!-- FIN SECCIÓN PRINCIPAL DEL MENÚ -->
 

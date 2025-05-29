@@ -2,7 +2,7 @@
     padding: 30px 0px;
 }
 body {
-  background-image: url('https://images.pexels.com/photos/518245/pexels-photo-518245.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-image: url('https://img.freepik.com/free-photo/abstract-bright-watercolor-texture_23-2147835966.jpg?semt=ais_hybrid&w=740');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -54,19 +54,25 @@ body {
     font-size: 1.3rem; /* Tamaño de fuente para las tabs */
 }
 .nav-tabs .nav-link.active {
-    background: #c0392b;
+    background: #27ae60;      /* verde */
     color: #fff;
     font-weight: 700;
-    border: 1px solid #c0392b;
+    border: 1px solid #27ae60;
     text-transform: capitalize;
+}
+.nav-tabs .nav-link:not(.active) {
+    background: #ff1900 !important; /* rojo */
+    color: #fff !important;
+    border: 1px solid #c0392b !important;
+    opacity: 1 !important;
 }
 .nav-link {
     color: #000;
 }
 .nav-tabs .nav-link:hover {
-    background: #c0392b;
+    background: #27ae60;      /* verde */
     color: #fff;
-    border: 1px solid #c0392b;
+    border: 1px solid #27ae60;
 }
 .single_menu {
   display: flex;
@@ -307,4 +313,8 @@ body {
   margin: 2rem auto;                           /* centrado vertical y horizontal */
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);   /* sombra pequeña y suave */
   backdrop-filter: blur(2px);                  /* efecto de desenfoque suave */
+}
+.fondo-blanco {
+  background: #fff;
+  border-radius: 50%;
 }
